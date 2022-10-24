@@ -81,11 +81,13 @@ const params = {
 
 
 
-        
+console.log(HDR);
+console.log("going inside");        
 const hdrEquirect = new RGBELoader()
   //.setDataType(THREE.UnsignedByteType)
   .load( HDR, function () {
 
+    console.log(HDR);
     hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
     hdrEquirect.encoding = THREE.sRGBEncoding;
     
