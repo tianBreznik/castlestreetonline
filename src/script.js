@@ -23,8 +23,9 @@ import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectionShader.js";
 import { SubsurfaceScatteringShader } from "three/examples/jsm/shaders/SubsurfaceScatteringShader.js";
 import { UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
+import HDR from '../static/sky.hdr'
 
-const HDR = 'sky.hdr';
+//const HDR = 'sky.hdr';
 
 var objects = [];
 
