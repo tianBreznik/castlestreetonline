@@ -1,18 +1,10 @@
 import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import * as dat from 'dat-gui'
-import { Stats } from 'three/examples/js/libs/stats.min.js'
 import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader';
 import { WEBGL } from 'three/examples/jsm/WebGL.js';
 import { noise } from './perlin.js';
-//import { HDR } from '../static/sky.hdr';
-
-
-
-
+//import HDR from '../static/sky.hdr';
 
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
@@ -21,11 +13,10 @@ import { BleachBypassShader } from "three/examples/jsm/shaders/BleachBypassShade
 import { ColorCorrectionShader } from "three/examples/jsm/shaders/ColorCorrectionShader.js";
 import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectionShader.js";
-import { SubsurfaceScatteringShader } from "three/examples/jsm/shaders/SubsurfaceScatteringShader.js";
 import { UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
-import HDR from '../static/sky.hdr'
 
-//const HDR = 'sky.hdr';
+//import { HDR } from '../static/sky.hdr'
+const HDR = 'sky.hdr';
 
 var objects = [];
 
