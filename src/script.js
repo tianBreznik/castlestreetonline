@@ -24,7 +24,7 @@ import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectio
 import { SubsurfaceScatteringShader } from "three/examples/jsm/shaders/SubsurfaceScatteringShader.js";
 import { UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 
-const HDR = 'sky.hdr';
+const HDR = 'https://tianbreznik.github.io/castlestreetonline/dist/sky.hdr';
 
 var objects = [];
 
