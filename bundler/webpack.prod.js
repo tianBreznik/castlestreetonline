@@ -9,10 +9,6 @@ module.exports = merge(
         plugins:
         [
             new CleanWebpackPlugin()
-        ],
-        module:
-        {
-            rules: [{ test: /\.hdr$/, use: "url-loader" }]
-        }
-    }
+        ]
+    },
 )

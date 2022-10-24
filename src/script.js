@@ -8,6 +8,7 @@ import { Stats } from 'three/examples/js/libs/stats.min.js'
 import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader';
 import { WEBGL } from 'three/examples/jsm/WebGL.js';
 import { noise } from './perlin.js';
+//import { HDR } from '../static/sky.hdr';
 
 
 
@@ -82,6 +83,7 @@ const params = {
 
         
 const hdrEquirect = new RGBELoader()
+  //.setDataType(THREE.UnsignedByteType)
   .load( HDR, function () {
 
     hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
