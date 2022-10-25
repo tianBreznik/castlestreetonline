@@ -15,7 +15,7 @@ import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectionShader.js";
 import { UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 
-//import { HDR } from '../static/sky.hdr'
+//import { HDR } from './sky.hdr'
 const HDR = 'sky.hdr';
 
 var objects = [];
@@ -70,11 +70,7 @@ const params = {
 // gui.add(params_bloom, 'bloomRadius', 0, 1)
 
 
-
-
-
-console.log(HDR);
-console.log("going inside");        
+       
 const hdrEquirect = new RGBELoader()
   //.setDataType(THREE.UnsignedByteType)
   .load( HDR, function () {
