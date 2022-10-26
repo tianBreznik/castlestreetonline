@@ -76,11 +76,6 @@ module.exports = {
                 {
                     filename: 'assets/fonts/[hash][ext]'
                 }
-            },
-
-            // HDR
-            {
-                rules: [{ test: /\.hdr$/, use: "url-loader" }]
             }
           
         ]

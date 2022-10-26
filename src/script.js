@@ -2,6 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader';
+import { EXRLoader } from "three/examples/jsm/loaders/EXRLoader.js";
 import { WEBGL } from 'three/examples/jsm/WebGL.js';
 import { noise } from './perlin.js';
 //import HDR from '../static/sky.hdr';
@@ -17,6 +18,7 @@ import { UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPas
 
 //import { HDR } from './sky.hdr'
 const HDR = 'sky.hdr';
+const EXR = 'sky_resized.exr';
 
 var objects = [];
 
@@ -71,9 +73,9 @@ const params = {
 
 
        
-const hdrEquirect = new RGBELoader()
+const hdrEquirect = new EXRLoader()
   //.setDataType(THREE.UnsignedByteType)
-  .load( HDR, function () {
+  .load( EXR, function () {
 
     console.log(HDR);
     hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
